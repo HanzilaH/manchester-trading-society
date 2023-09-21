@@ -1,0 +1,81 @@
+.mts-nav-link{
+    text-decoration: none;
+    width: fit-content;
+    font-size: 18px;
+    color: #f6f5f29d;
+    font-family: inherit;
+    font-weight: 400;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 400ms;
+    
+}
+
+.mts-nav-link:hover {
+    color: #f6f5f2;
+    border-bottom: 1.5px solid #f6f5f2;
+
+  }
+
+
+
+
+
+
+#custom-toggler {
+    background-color:transparent;
+
+    border: none;
+    outline: none;
+
+    /* this property seems to have removed the highlight on click of the button */
+    color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 0.25rem 0.5rem;
+
+  }
+  
+  .navbar-toggler-icon {
+    padding: 0.15rem; /* Adjust padding to make the icon smaller */
+    font-size: 15px; /* Adjust font size to make the icon smaller */
+    color: #ffffff;
+    background: transparent;
+    transform: rotate(0deg); /*this is need for reversing the rotation*/
+    transition: transform 0.5s;
+  }
+  
+  
+
+@media (min-width: 767px) {
+
+  /* Hover effect for the button */
+  #custom-toggler:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+  }
+
+  
+/* Custom styles for the rotated button */
+.rotate .navbar-toggler-icon {
+    transform: rotate(-90deg);
+    transition: transform 0.5s; /* Smooth transition for rotation */
+  }
+
+
+.navbar-nav {
+
+  letter-spacing: 1px;
+}
+
+#mts-navbar{
+  background: #141c25;
+
+}
+
+
+  

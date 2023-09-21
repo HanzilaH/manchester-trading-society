@@ -1,0 +1,29 @@
+#mainPageAnimation-section{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.mainPageAnimation-content{
+     animation-name: scaleAnimation; /* Name of the keyframes animation */
+    animation-duration: 2s; /* Duration of the animation (2 seconds in this example) */
+    animation-timing-function: ease-in-out; /* Timing function (e.g., ease-in-out for smooth start and end) */
+    animation-iteration-count: 1; /* Infinite loop */
+}
+
+/* Define a CSS animation using keyframes */
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1); /* Start with normal size */
+    }
+    50% {
+      transform: scale(1.3); /* Scale to 1.3x size at the midpoint */
+    }
+    100% {
+      transform: scale(1); /* Return to normal size */
+    }
+  }
+
+  
