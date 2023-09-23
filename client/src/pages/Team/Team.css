@@ -1,0 +1,11 @@
+#team-container{
+    /* padding: 4rem 10%; */
+    background-color: #f6f5f2;
+    color: #21293e;
+}
+
+#team-container .display-6{
+    padding-top: 4rem;
+    padding-inline: 10%;
+
+}

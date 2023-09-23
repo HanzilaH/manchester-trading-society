@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
 
         {/* idk why mt-auto didnt seem to work */}
-        <div className="text-center mt-lg-5">
+        <div className="text-center pb-2 mt-lg-5">
           © 2023 Manchester Trading Society Website.
           <br /> All rights reserved.
         </div>

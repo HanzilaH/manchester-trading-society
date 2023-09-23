@@ -1,0 +1,84 @@
+
+
+.card.team-member-card{
+    border: none;
+}
+
+.team-member-card-body{
+    margin-top: 2rem;
+}
+
+
+.team-member-card.card {
+    width: 390px;
+    margin: 3rem 0%;
+    /* height: 254px; */
+    background: #21293e;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+   }
+   
+   .team-member-card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #d4d3ea;
+    margin: 0 auto;
+    border-radius: 0px 0px 15px 15px;
+   }
+   
+   .team-member-card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    /* display: block; */
+    padding-top: 10px;
+    font-size: 16px;
+   }
+   
+   .team-member-card .job {
+    font-weight: 400;
+    color: #f6f5f2;
+    /* display: block; */
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+   }
+
+   .team-member-card-description{
+    color: #f6f5f2;
+    text-align: start;
+    padding: 0% 2rem;
+   }
+   
+.team-member-card img {
+  width: auto;
+  height: 80px;
+  object-fit: cover;
+  background: #6b64f3;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+   
+   .team-member-card button {
+    padding: 8px 25px;
+    /* display: block; */
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #d4d3ea;
+    color: white;
+    font-weight: 600;
+   }
+   
+   .team-member-card button:hover {
+    background: #5a5963;
+   }
+
+
+   .team-member-card-linkedin-icon {
+    color: black; /* Change to gray (#777777) for a gray icon */
+  }
+  
