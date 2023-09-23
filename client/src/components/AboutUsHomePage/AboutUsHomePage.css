@@ -1,0 +1,38 @@
+#about-us-home-page{
+    margin: 5% 10%;
+    color: #21293e;
+}
+
+#about-us-home-page-heading{
+    font-weight: 400;
+    font-size: 1.4rem;
+
+}
+
+
+
+#about-us-home-page-society-overview{
+    /* font-size: 2.8rem; */
+    font-weight: 400;
+    line-height: 1;
+
+
+}
+
+#about-us-home-page-more-details{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+#about-us-home-page-more-details button{
+    background: none;
+    text-decoration: none;
+    border-radius: 50%;
+    border-width: 0px;
+    /* background: white; */
+    margin: 0% 1.4rem;
+}
+
+#about-us-home-page-more-details button:hover{
+    color: #e3b873;
+}

@@ -2,3 +2,98 @@
     background-color: #f6f5f2;
     color: #21293e;
 }
+
+#home-info-container{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    background-color: #21293e;
+    color: #f6f5f2;
+    font-size: 1.4rem;
+
+}
+
+
+
+.square {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    margin-right: 20px; 
+    border: 1px solid #21293e; /* Border color and width */
+    transform: rotate(45deg);
+    clip-path: polygon(
+        20% 0%,
+        80% 0%,
+        100% 20%,
+        100% 80%,
+        80% 100%,
+        20% 100%,
+        0% 80%,
+        0% 20%
+      );
+    /* animation: rotatesquare 3s linear infinite;  */
+
+  }
+  
+  @keyframes rotatesquare {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }  
+
+
+  #home-events-container{
+    margin: 2% 10%;
+  }
+
+  #home-events-container .display-5{
+    font-weight: 400;
+    font-size: 2.4rem;
+  }
+
+
+  .home-events-card{
+    margin-top: 3rem;
+    border-radius: 15px;
+  background: #e0e0e0;
+  }
+  .home-events-card img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .home-events-card-body{
+    padding: 5%;
+    color: #21293e;
+  }
+
+  .home-events-card-button{
+    border: none;
+    background: #21293e;
+    color: #e0e0e0;
+    border-radius: 5px;
+    padding: 0.4rem 1.1rem;
+  }
+
+
+  #events-home-page-more-events-icon{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+#events-home-page-more-events-icon button{
+    background: none;
+    text-decoration: none;
+    border-radius: 50%;
+    border-width: 0px;
+    /* background: white; */
+    margin: 0% 1.4rem;
+}
+
+#events-home-page-more-events-icon button:hover{
+    color: #e3b873;
+}

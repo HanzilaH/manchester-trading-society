@@ -3,6 +3,24 @@
     border-width: 1px ;
     border-color: #21293e;
     color: #21293e;
-    padding: 0.4% 2%;
+    padding: 0.3rem 1.1rem;
+
+    background: #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
 }
+
+
+#jumbotron-button:hover {
+    border: 1px solid #e3b873;
+    color: #e3b873;
+    
+  }
+  
+  #jumbotron-button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+               -4px -4px 12px #ffffff;
+  }
+
 

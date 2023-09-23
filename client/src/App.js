@@ -6,6 +6,7 @@ import Team from './pages/Team/Team';
 import Gallery from './pages/Gallery/Gallery'
 import AboutUs from './pages/AboutUs/AboutUs'
 import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 
