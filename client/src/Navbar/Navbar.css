@@ -1,10 +1,15 @@
+#mts-navbar-logo img{
+  height: 3.0rem;
+  margin-left: 1.5rem;
+}
+
 .mts-nav-link{
+
     text-decoration: none;
     width: fit-content;
-    font-size: 18px;
+    font-size: 14px;
     color: #f6f5f29d;
-    font-family: inherit;
-    font-weight: 400;
+    font-weight: 300;
     cursor: pointer;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition: all 400ms;
@@ -16,6 +21,15 @@
     border-bottom: 1.5px solid #f6f5f2;
 
   }
+
+  @media (max-width: 767px) {
+    .mts-nav-link {
+      color: #f6f5f2;
+      /* border-bottom: 1.5px solid #f6f5f2; */
+  
+    }
+  }
+  
 
 
 
@@ -73,7 +87,7 @@
 }
 
 #mts-navbar{
-  background: #141c25;
+  background: #21293e;
 
 }
 

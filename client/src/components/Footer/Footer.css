@@ -1,0 +1,47 @@
+#footer{
+    min-height: 50vh;
+    /* width: 100vw; */
+    background-color: #131c25;
+    color: #ece9e4;
+}
+
+.footer-social-links{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.footer-social-links div{
+    padding: 4px 8px;
+}
+
+
+.footer-social-links:hover{
+
+    transform: scale(1.2);
+}
+
+
+.footer-page-link{
+    /* text-decoration: none; */
+    color: #ece9e4;
+
+    margin: 4px 2px;
+}
+
+
+
+  
+  /* Style for each contact item */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .contact-item div {
+    margin: 10px;
+  }
+  
