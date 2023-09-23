@@ -5,10 +5,17 @@ import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import MainPageAnimation from "../../components/MainPageAnimation/MainPageAnimation";
 import AboutUsHomePage from "../../components/AboutUsHomePage/AboutUsHomePage";
 import ExpectationsHomePage from "../../components/ExpectationsHomePage/ExpectationsHomePage";
-
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
+  const navigate = useNavigate();
+  function GoogleRedirect() {
+    // Redirect to Google when this route is matched
+    window.location.href = "https://www.google.com";
+    return null; // This component won't be rendered
+  }
+
   return (
     <>
       <div id="home-div">
@@ -53,7 +60,10 @@ const Home = () => {
                       Some long boring tedious irrelevant promotional
                       explanation.
                     </p>
-                    <button className="home-events-card-button">
+                    <button
+                      onClick={GoogleRedirect}
+                      className="home-events-card-button"
+                    >
                       Register
                     </button>
                   </div>
@@ -68,7 +78,10 @@ const Home = () => {
                       Some long boring tedious irrelevant promotional
                       explanation
                     </p>
-                    <button className="home-events-card-button">
+                    <button
+                      onClick={GoogleRedirect}
+                      className="home-events-card-button"
+                    >
                       Register
                     </button>
                   </div>
@@ -83,8 +96,12 @@ const Home = () => {
             className="text-end p-4 m-4"
           >
             More Events
-            <button>
-              <FontAwesomeIcon icon={faArrowRight} beat />
+            <button onClick={() => navigate("/events")}>
+              <FontAwesomeIcon
+                className="home-arrow-icon"
+                icon={faArrowRight}
+                beat
+              />
             </button>
           </div>
         </div>

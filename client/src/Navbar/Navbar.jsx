@@ -15,6 +15,7 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     // Remove the "show" class from the collapsible div so that nav bar closes after any link is clicked
+    //
     const navbarCollapse = document.getElementById("navbarSupportedContent");
     navbarCollapse.classList.remove("show");
     handleToggleClick();
@@ -48,6 +49,16 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="navbar-nav ms-auto ">
+              <div className="my-2 mx-4">
+                <Link
+                  to="/"
+                  aria-current="page"
+                  onClick={handleLinkClick}
+                  className=" mts-nav-link "
+                >
+                  Home
+                </Link>
+              </div>
               <div className="my-2 mx-4">
                 <Link
                   to="/events"

@@ -43,7 +43,7 @@ const AboutUsHomePage = () => {
         </div>
         <div id="about-us-home-page-more-details" className="">
           More details
-          <button onClick={onMoreDetailsClick}>
+          <button className="home-arrow-icon" onClick={onMoreDetailsClick}>
             <FontAwesomeIcon icon={faArrowRight} beat />
           </button>
         </div>

@@ -47,7 +47,7 @@
 
 
   #home-events-container{
-    margin: 3rem 10%;
+    padding: 3rem 10%;
   }
 
   #home-events-container .display-5{
@@ -96,4 +96,9 @@
 
 #events-home-page-more-events-icon button:hover{
     color: #e3b873;
+}
+
+
+.home-arrow-icon{
+  color: #21293e;
 }
