@@ -5,7 +5,8 @@ import Home from './pages/Home/Home';
 import Team from './pages/Team/Team';
 import Gallery from './pages/Gallery/Gallery'
 import AboutUs from './pages/AboutUs/AboutUs'
-import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
+import Events from './pages/Events/Events';
+import Footer from './components/Footer/Footer';
 import 'font-awesome/css/font-awesome.min.css';
 
 
@@ -29,9 +30,11 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/articles" element={<ArticlesPage />} />
+        <Route path="/events" element={<Events />} />
 
       </Routes>
+      <Footer />
+
 
       </Router>
       

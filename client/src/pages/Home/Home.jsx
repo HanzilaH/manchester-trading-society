@@ -5,7 +5,6 @@ import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import MainPageAnimation from "../../components/MainPageAnimation/MainPageAnimation";
 import AboutUsHomePage from "../../components/AboutUsHomePage/AboutUsHomePage";
 import ExpectationsHomePage from "../../components/ExpectationsHomePage/ExpectationsHomePage";
-import Footer from "../../components/Footer/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -89,8 +88,6 @@ const Home = () => {
             </button>
           </div>
         </div>
-
-        <Footer />
       </div>
     </>
   );
