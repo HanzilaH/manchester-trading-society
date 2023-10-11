@@ -74,7 +74,25 @@ const TeamMemberCard = ({
     //     </div>
     //   </div>
     // </div>
+
+
+
+
+
     <div className="col-md d-flex justify-content-center">
+    {/* <div class="myCard">
+    <div class="innerCard">
+        <div class="frontSide">
+            <p class="title"> {memberName}</p>
+            <p class="job"> {memberRole}</p>
+        </div>
+        <div class="backSide">
+            <p class="title">BACK SIDE</p>
+            <p>Leave Me</p>
+        </div>
+    </div>
+</div> */}
+
       <div class="team-member-card card">
         <div class="card-border-top">.</div>
         <img src={memberPhotoName} class="img" />
@@ -92,23 +110,6 @@ const TeamMemberCard = ({
           </a>
         </button>
       </div>
-
-      {/* <div className="card team-member-card">
-        <img src={memberPhotoName} className="card-img-top" alt="..." />
-
-        <div className="team-member-card-body">
-          <h5>Name: {memberName}</h5>
-          <h6 className="">Position: {memberRole}</h6>
-
-          <p>{memberDescription}</p>
-
-          <div className="text-end mx-3">
-            <a href={memberLinkedIn} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="xl" />{" "}
-            </a>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

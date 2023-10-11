@@ -6,10 +6,11 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
   const navigate = useNavigate();
+  const imageUrl = process.env.PUBLIC_URL + '/aboutus.jpg';
   return (
     <>
       <div id="about-us-top-section">
-        <div id="about-us-top-image"></div>
+          <img id="about-us-top-image" src={imageUrl} alt="" />
         <div id="about-us-title">
           <h2 className="display-4">About Us</h2>
         </div>

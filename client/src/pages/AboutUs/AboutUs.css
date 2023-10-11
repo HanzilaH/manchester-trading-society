@@ -7,21 +7,20 @@
 
   }
   
-  #about-us-top-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../../public/aboutus.jpg');
-    background-size: cover; 
+  #about-us-top-image{
+    position: fixed;
+    /* background-size: cover;  */
     background-position: center;
     opacity: 0.7; 
     z-index: -1;
-    background-attachment: fixed; /* This creates the parallax effect */
-
+    /* background-attachment: fixed;  */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 
   }
+
 
 
   #about-us-title {

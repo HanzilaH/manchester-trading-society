@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Carousel from "../../components/Carousel/Carousel";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
+import LandingHomePage from "../../components/LandingHomePage/LandingHomePage";
 import MainPageAnimation from "../../components/MainPageAnimation/MainPageAnimation";
 import AboutUsHomePage from "../../components/AboutUsHomePage/AboutUsHomePage";
 import ExpectationsHomePage from "../../components/ExpectationsHomePage/ExpectationsHomePage";
@@ -18,10 +19,10 @@ const Home = () => {
 
   return (
     <>
-      <div id="home-div">
-        {/* <MainPageAnimation></MainPageAnimation> */}
-        <Carousel />
-        <Jumbotron />
+      <div  id="home-div">
+      <LandingHomePage/>
+        {/* <Carousel /> */}
+        {/* <Jumbotron /> */}
         <AboutUsHomePage />
 
         {/* this container info about the presents membership at the society */}

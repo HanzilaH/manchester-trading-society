@@ -1,0 +1,71 @@
+
+#landing-home-page-container{
+    min-height: 90vh;
+}
+
+#blue-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21293e;
+    width: 100vw;
+    height: 0;
+    transition: height 1s ease-out;
+}
+
+#blue-section.expanded {
+    height: 100vh;
+
+
+}
+
+.fade-in {
+    color: aliceblue;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.landing-home-page-jumbotron{
+    color: aliceblue;
+    opacity: 0;
+}
+
+
+
+.rectangle-landing-home-page{
+    width: 300px;
+    height: 500px;
+    z-index: 2;
+    background-color: #a5b4d835;
+    position: absolute;
+    border-radius: 25px;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    animation: fadeInRectangleHomePage 2s ease forwards;
+}
+
+@keyframes fadeInRectangleHomePage {
+    0%{
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
