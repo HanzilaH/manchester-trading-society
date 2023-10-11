@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './Navbar/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Team from './pages/Team/Team';
-import Gallery from './pages/Gallery/Gallery'
-import AboutUs from './pages/AboutUs/AboutUs'
-import Events from './pages/Events/Events';
-import Footer from './components/Footer/Footer';
+import Home from '../Home/Home';
+import Team from '../Team/Team';
+import Gallery from '../Gallery/Gallery'
+import AboutUs from '../AboutUs/AboutUs'
+import Events from '../Events/Events';
+import Footer from '../../components/Footer/Footer';
 import 'font-awesome/css/font-awesome.min.css';
 
 
@@ -14,7 +14,7 @@ import 'font-awesome/css/font-awesome.min.css';
 function App() {
   return (
     <div className="App">
-      
+
 
       <Router>
 
@@ -37,10 +37,10 @@ function App() {
 
 
       </Router>
-      
-      
+
+
     </div>
-    
+
   );
 }
 
