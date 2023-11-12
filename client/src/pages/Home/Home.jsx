@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import { useSpring, animated } from "react-spring";
+import { useInView } from 'react-intersection-observer';
 import Carousel from "../../components/Carousel/Carousel";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import LandingHomePage from "../../components/LandingHomePage/LandingHomePage";
@@ -10,6 +12,8 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
+  const { ref: statisticsContainer, inView: myElementIsVisible } = useInView();
+
   const navigate = useNavigate();
   function GoogleRedirect() {
     // Redirect to Google when this route is matched
@@ -17,27 +21,38 @@ const Home = () => {
     return null; // This component won't be rendered
   }
 
+  function Number({ n }) {
+    const { number } = useSpring({
+      from: { number: 0 },
+      number: n,
+      delay: 200,
+      config: { mass: 1, tension: 20, friction: 10 },
+    });
+
+    return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
+  }
+
   return (
     <>
       <div  id="home-div">
-      <LandingHomePage/>
+        <LandingHomePage/>
         {/* <Carousel /> */}
         {/* <Jumbotron /> */}
         <AboutUsHomePage />
 
         {/* this container info about the presents membership at the society */}
-        <div id="home-info-container">
+        <div ref={statisticsContainer} id="home-info-container">
           <div className="w-100  row justify-content-center">
             <div className="col-md-3 text-center my-3">
-              <div className="display-5 ">2</div>
+              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={2}/> : <span>0</span>}</div>
               years of activity
             </div>
             <div className="col-md-3 text-center my-3">
-              <div className="display-5 ">200+</div>
+              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={500}/> : <span>0</span>}+</div>
               members
             </div>
             <div className="col-md-3 text-center my-3">
-              <div className="display-5 ">20+</div>
+              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={10}/> : <span>0</span>}</div>
               committee
             </div>
           </div>
