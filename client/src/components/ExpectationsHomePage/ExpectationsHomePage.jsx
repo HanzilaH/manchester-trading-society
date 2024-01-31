@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ExpectationsHomePage.css";
+import ScrollReveal from "scrollreveal";
 
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const ExpectationsHomePage = () => {
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '50px',
+      duration: 2000,
+    })
+
+    sr.reveal(`#expectations-home-page-at-a-glance`, {origin: 'right', distance: '50px', duration: 2000})
+    sr.reveal(`#expectations-home-page-title`, {origin: 'right', distance: '50px', duration: 2000})
+    sr.reveal(`#expectations-home-page-description`, {origin: 'right', distance: '50px', duration: 2000, interval: 200})
+  }, [])
+
   return (
     <>
       <div id="expectations-home-page">

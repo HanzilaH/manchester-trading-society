@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Jumbotron from '../Jumbotron/Jumbotron';
 import './LandingHomePage.css';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function LandingHomePage() {
     const [showText, setShowText] = useState(false);
@@ -23,7 +23,7 @@ function LandingHomePage() {
 
                 <div className={showText ? 'fade-in landing-home-page-jumbotron' : 'landing-home-page-jumbotron'}>
         <div className="row ">
-          <div className="col-md-11 mx-auto  ">
+          <div className="col-md-11 mx-auto">
             <div className="p-4 text-center">
               <h1 className="display-5">Manchester Trading Society</h1>
               <p className="lead">
@@ -47,6 +47,5 @@ function LandingHomePage() {
         </div>
     );
 }
-
 
 export default LandingHomePage;

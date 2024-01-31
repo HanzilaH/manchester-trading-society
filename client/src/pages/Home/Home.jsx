@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import { useSpring, animated } from "react-spring";
 import { useInView } from 'react-intersection-observer';
@@ -11,6 +11,8 @@ import ExpectationsHomePage from "../../components/ExpectationsHomePage/Expectat
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ScrollReveal from "scrollreveal";
+
 const Home = () => {
   const { ref: statisticsContainer, inView: myElementIsVisible } = useInView();
 
@@ -32,6 +34,18 @@ const Home = () => {
     return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
   }
 
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '50px',
+      duration: 2000,
+    })
+
+    sr.reveal(`.changing_number`,{origin: 'top', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`.changing_number_description`, {origin: 'bottom', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`.home-events-card`, {origin: 'left', distance: '30px', duration: 2000, interval: 300})
+  }, [])
+
   return (
     <>
       <div  id="home-div">
@@ -45,15 +59,15 @@ const Home = () => {
           <div className="w-100  row justify-content-center">
             <div className="col-md-3 text-center my-3">
               <div className="display-5 changing_number">{myElementIsVisible ? <Number n={2}/> : <span>0</span>}</div>
-              years of activity
+              <div className="changing_number_description">years of activity</div>
             </div>
             <div className="col-md-3 text-center my-3">
               <div className="display-5 changing_number">{myElementIsVisible ? <Number n={500}/> : <span>0</span>}+</div>
-              members
+              <div className="changing_number_description">members</div>
             </div>
             <div className="col-md-3 text-center my-3">
               <div className="display-5 changing_number">{myElementIsVisible ? <Number n={10}/> : <span>0</span>}</div>
-              committee
+              <div className="changing_number_description">committee</div>
             </div>
           </div>
         </div>
