@@ -32,7 +32,7 @@ function LandingHomePage() {
               <div className="text-center">
                 <h1
                   id="landing-home-page-title"
-                  className=" mb-3 mx-5 display-3"
+                  className=" mb-5 mx-5 display-3"
                 >
                   Manchester Trading Society
                 </h1>
@@ -41,7 +41,7 @@ function LandingHomePage() {
                   and work for it.”
                 </p>
 
-                <hr className="my-4" />
+                <hr className="my-4 mx-5" />
                 <p>Explore a world of financial expertise.</p>
               </div>
             </div>

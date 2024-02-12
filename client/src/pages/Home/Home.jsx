@@ -43,10 +43,10 @@ const Home = () => {
     })
 
     sr.reveal(`.changing_number`,{origin: 'top', distance: '50px', duration: 1000, interval: 200})
-    sr.reveal(`.changing_number_description`, {origin: 'bottom', distance: '50px', duration: 1000, interval: 200})
+    sr.reveal(`.changing_number_description`, {origin: 'top', distance: '50px', duration: 1000, interval: 200})
     sr.reveal(`.home-events-card`, {origin: 'left', distance: '30px', duration: 2000, interval: 300})
 
-    sr.reveal(`#about-us-home-page-heading`,{origin: 'right', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`#about-us-home-page-heading`,{origin: 'left', distance: '50px', duration: 2000, interval: 200})
     // sr.reveal(`.square`,{origin: 'top', distance: '50px', duration: 2000, interval: 200})
     sr.reveal(`#about-us-home-page-society-overview`,{origin: 'left', distance: '50px', duration: 2000, interval: 200})
     sr.reveal(`#about-us-home-page-description`,{origin: 'left', distance: '50px', duration: 2000, interval: 200})
