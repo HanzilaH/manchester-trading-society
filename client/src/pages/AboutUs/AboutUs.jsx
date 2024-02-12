@@ -1,19 +1,29 @@
 import React from "react";
 import "./AboutUs.css";
-
+import { useEffect, useState, useRef } from "react";
+import ScrollReveal from "scrollreveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
   const navigate = useNavigate();
-  const imageUrl = process.env.PUBLIC_URL + '/aboutus.jpg';
+  const imageUrl = '/aboutus.jpg';
+  const [isVisible, setIsVisible] = useState(false);
+  const topImageRef = useRef(null);
+
+
   return (
     <>
       <div id="about-us-top-section">
-          <img id="about-us-top-image" src={imageUrl} alt="" />
-        <div id="about-us-title">
+
+      <div id="about-us-title">
           <h2 className="display-4">About Us</h2>
         </div>
+        <div id="about-us-background">
+
+        </div>
+          <img className="right-animation" id="about-us-top-image" src={imageUrl} alt="" />
+
       </div>
       <div id="about-us-info-section">
         <div className="display-6">Mission</div>

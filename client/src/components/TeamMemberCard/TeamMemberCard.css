@@ -2,6 +2,7 @@
 
 .card.team-member-card{
     border: none;
+    overflow: hidden;
 }
 
 .team-member-card-body{
@@ -52,13 +53,17 @@
    
 .team-member-card img {
   width: auto;
-  height: 80px;
+  height: 200px;
   object-fit: cover;
   background: #6b64f3;
   border-radius: 15px;
   margin: auto;
   margin-top: 25px;
+  /* animation: expandFromRight 1s ease forwards; */
 }
+
+
+
 
    
    .team-member-card button {

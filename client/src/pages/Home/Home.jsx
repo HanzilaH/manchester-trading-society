@@ -39,11 +39,23 @@ const Home = () => {
       origin: 'bottom',
       distance: '50px',
       duration: 2000,
+      reset: true,
     })
 
-    sr.reveal(`.changing_number`,{origin: 'top', distance: '50px', duration: 2000, interval: 200})
-    sr.reveal(`.changing_number_description`, {origin: 'bottom', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`.changing_number`,{origin: 'top', distance: '50px', duration: 1000, interval: 200})
+    sr.reveal(`.changing_number_description`, {origin: 'bottom', distance: '50px', duration: 1000, interval: 200})
     sr.reveal(`.home-events-card`, {origin: 'left', distance: '30px', duration: 2000, interval: 300})
+
+    sr.reveal(`#about-us-home-page-heading`,{origin: 'right', distance: '50px', duration: 2000, interval: 200})
+    // sr.reveal(`.square`,{origin: 'top', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`#about-us-home-page-society-overview`,{origin: 'left', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`#about-us-home-page-description`,{origin: 'left', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`#about-us-home-page-more-details`,{origin: 'left', distance: '50px', duration: 2000, interval: 200})
+    sr.reveal(`#about-us-home-page-more-details button`,{origin: 'left', distance: '30px', duration: 4000, interval: 200})
+            
+
+    // Clean up ScrollReveal when the component unmounts
+    return () => sr.destroy();
   }, [])
 
   return (
@@ -58,15 +70,15 @@ const Home = () => {
         <div ref={statisticsContainer} id="home-info-container">
           <div className="w-100  row justify-content-center">
             <div className="col-md-3 text-center my-3">
-              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={2}/> : <span>0</span>}</div>
-              <div className="changing_number_description">years of activity</div>
+              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={300}/> : <span>0</span>}+</div>
+              <div className="changing_number_description">subscribers</div>
             </div>
             <div className="col-md-3 text-center my-3">
-              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={500}/> : <span>0</span>}+</div>
+              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={20}/> : <span>0</span>}+</div>
               <div className="changing_number_description">members</div>
             </div>
             <div className="col-md-3 text-center my-3">
-              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={10}/> : <span>0</span>}</div>
+              <div className="display-5 changing_number">{myElementIsVisible ? <Number n={10}/> : <span>0</span>}+</div>
               <div className="changing_number_description">committee</div>
             </div>
           </div>
@@ -79,12 +91,12 @@ const Home = () => {
         <div id="home-events-container">
           <div className="display-5">Upcoming Events</div>
 
-          <div class="container ">
-            <div class="row justify-content-around gy-3">
-              <div class="col-md-5">
-                <div class="home-events-card">
-                  <img src="/home1.jpg" class="card-img-top" alt="..." />
-                  <div class="home-events-card-body">
+          <div className="container ">
+            <div className="row justify-content-around gy-3">
+              <div className="col-md-5">
+                <div className="home-events-card">
+                  <img src="/home1.jpg" className="card-img-top" alt="..." />
+                  <div className="home-events-card-body">
                     <h5>Some event</h5>
                     <p>
                       Some long boring tedious irrelevant promotional
@@ -99,10 +111,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-5">
-                <div class="home-events-card">
-                  <img src="/home1.jpg" class="card-img-top" alt="..." />
-                  <div class="home-events-card-body">
+              <div className="col-md-5">
+                <div className="home-events-card">
+                  <img src="/home1.jpg" className="card-img-top" alt="..." />
+                  <div className="home-events-card-body">
                     <h5>Some other event</h5>
                     <p>
                       Some long boring tedious irrelevant promotional

@@ -5,6 +5,8 @@ import {
   faInstagram,
   faTwitter,
   faFacebook,
+  faLinkedin,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"; // Import icons as needed
 
@@ -15,19 +17,19 @@ const Footer = () => {
     {
       platform: "Instagram",
       icon: faInstagram,
-      url: "https://www.instagram.com/",
+      url: "https://www.instagram.com/manchestertradingsociety/",
     },
-    { platform: "Twitter", icon: faTwitter, url: "https://twitter.com/" },
+    { platform: "LinkedIn", icon: faLinkedin, url: "https://www.linkedin.com/company/manchester-trading-society/" },
     {
-      platform: "Facebook",
-      icon: faFacebook,
-      url: "https://www.facebook.com/",
+      platform: "Discord",
+      icon: faDiscord,
+      url: "https://discord.com/invite/9Z27SG436n",
     },
   ];
 
   const contactLinks = [
-    { platform: "Phone", icon: faPhone, content: "+1 (123) 456-7890" },
-    { platform: "Email", icon: faEnvelope, content: "info@example.com" },
+    { platform: "Phone", icon: faPhone, content: "+44 7495 721631" },
+    { platform: "Email", icon: faEnvelope, content: "manchestertradingsociety@gmail.com" },
     // {
     //   platform: "President Email",
     //   icon: faEnvelope,
@@ -80,15 +82,19 @@ const Footer = () => {
               <div className="text-center display-6">Contact</div>
 
               <div
-                id="footer-socials"
-                className="d-flex  align-items-center flex-column m-5"
+                
+                className="d-flex justify-content-center "
               >
+                <div className="flex-column m-5">
+
                 {contactLinks.map((link, index) => (
                   <div className="contact-item" key={index}>
                     <FontAwesomeIcon icon={link.icon} />
                     <div>{link.content}</div>
                   </div>
                 ))}
+                </div>
+
               </div>
             </div>
           </div>

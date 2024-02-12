@@ -7,42 +7,86 @@
 
   }
   
-  #about-us-top-image{
+  #about-us-top-image {
     position: fixed;
-    /* background-size: cover;  */
     background-position: center;
-    opacity: 0.7; 
-    z-index: -1;
-    /* background-attachment: fixed;  */
+    opacity: 0.6;
+    z-index: -2;
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
-
-  }
-
-
-
-  #about-us-title {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    padding: 20px;
-    color: #fff; 
-
+    /* box-sizing: border-box; */
+    object-fit: cover;
+    cursor: pointer;
+    /* object-position: right; */
+    padding-left: 0%; 
+  
+    /* Animation */
+    /**/
   }
   
-  #about-us-title h2 {
-    /* font-size: 24px;  */
-    margin: 0;
 
+  
+  #about-us-background{
+    background: #21293e;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding-right: 0%;
+    animation: revealFromRight 2s forwards; 
 
   }
+  @keyframes revealFromRight {
+    0% {
+      width: 100%;/* Start with full padding to hide the image */
+    }
+    100% {
+      width: 0; /* Gradually reduce padding to reveal the image */
+    }
+  }
+
+
+#about-us-title {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background: none;
+ 
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(0.8); /* Start with the initial scale */
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+    transform: scale(0.8); /* Start with the initial scale */
+
+  }
+  100% {
+    transform: scale(1.2); /* Gradually scale back to normal size */
+    opacity: 1;
+  }
+}
+
+#about-us-title h2 {
+  /* font-size: 24px; */
+  margin: 0;
+  opacity: 1;
+  color: #21293e;
+  font-family: 'Times New Roman', Times, serif;
+  animation: titleAnimation 3s forwards; /* Apply the animation */
+}
+
 
 
 
@@ -74,4 +118,4 @@
 #about-us-to-team-button button:hover{
     color: #e3b873;
 }
-  
+
