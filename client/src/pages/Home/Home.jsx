@@ -89,7 +89,7 @@ const Home = () => {
 
         {/* this contains info about the upcoming events in two cards */}
         <div id="home-events-container">
-          <div className="display-5">Upcoming Events</div>
+          <div className="display-5 future-events-header">Upcoming Events</div>
 
           <div className="container ">
             <div className="row justify-content-around gy-3">

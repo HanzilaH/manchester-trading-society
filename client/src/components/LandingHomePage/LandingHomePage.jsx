@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Jumbotron from "../Jumbotron/Jumbotron";
 import "./LandingHomePage.css";
 import { useState } from "react";
@@ -44,10 +44,23 @@ function LandingHomePage() {
                 <hr className="my-4" />
                 <p>Explore a world of financial expertise.</p>
               </div>
-            </div>
 
-
-
+                <div className={showText ? 'fade-in landing-home-page-jumbotron' : 'landing-home-page-jumbotron'}>
+        <div className="row ">
+          <div className="col-md-11 mx-auto">
+            <div className="p-4 text-center">
+              <h1 className="display-5">Manchester Trading Society</h1>
+              <p className="lead">
+                “Financial freedom is available to those who learn about it and
+                work for it.”
+              </p>
+              <hr className="my-4" />
+              <p>Explore a world of financial expertise.</p>
+              <button className="btn btn-primary btn-lg" onClick={() => window.location.href='https://manchesterstudentsunion.com/groups/trading-society-8c3e'}
+                // onClick={redirectToStudentUnionWebsite}
+              >
+                Join us
+              </button>
           </div>
 
 
